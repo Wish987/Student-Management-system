@@ -1,8 +1,10 @@
 // Django API URLs
 
-const API_URL = "http://127.0.0.1:8000/api/students/";
+const API_BASE_URL = "https://student-management-system-1mjz.onrender.com";
+const API_URL = `${API_BASE_URL}/api/students/`;
 
-const CREATE_URL = "http://127.0.0.1:8000/api/students/create/";
+const CREATE_URL = `${API_BASE_URL}/api/students/create/`;
+
 
 
 // Get HTML elements
@@ -16,7 +18,7 @@ const message = document.getElementById("message");
 const refreshButton = document.getElementById("refreshButton");
 
 
-// GET: Load all students from Django
+// GET: Load all students from Django 
 
 async function getStudents() {
 
